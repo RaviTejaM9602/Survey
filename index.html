@@ -14,79 +14,88 @@
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <!--User Story 1-->
     <header>
-    <h1 id="title">Microverse Survey Form</h1>
+           <h1 id="title">Microverse Survey Form</h1>
     <!--User Story 2-->
-    <p id="description">
-    Fill Your Details to Join in the Microverse Upcoming Bootcamp
-    </p>
-</header>
+          <p id="description">
+            Fill Your Details to Join in the Microverse Upcoming Bootcamp
+          </p>
+     </header>
    <!--User Story 3 & 4-->
-<div class="main-section">
-   <form id="survey-form">
+<main class="main-section">
+       <form id="survey-form">
 
-  <div class="row">
+  <section class="row">
     <div class="label">
-      <label id="name-label" for="name">Name : </label>
+      <label id="name-label" for="name">Name: </label>
     </div>
-    <div class="form-content">
+  <div class="form-content">
       <input type="text" name="name" id="name" placeholder="Microverse Bootcamper" required><br> 
     </div>
-  </div>
+  </section>
     
   <!--User Story 5 -->
 
-  <div class="row">
+  <section class="row">
     <div class="label">
-      <label for="email" id="email-label">Email</label>
+      <label for="email" id="email-label">Email: </label>
     </div>
     <div class="form-content">
       <input type="email" name="email" id="email" placeholder="Enter your Email" required  /> <br>
     </div>
-  </div>
+  </section>
 
   <!--User Story 5 , 6, 7 ,8, 9 & 10-->
-<div class="row">
+<section class="row">
   <div class="label">
-    <label for="number" id="number-label">Age<span class="clue">(optional)</span></label>
+    <label for="number" id="number-label">Age<span class="clue">(optional): </span></label>
   </div>
   <div class="form-content">
     <input id="number" type="number" min="20" max="99" placeholder="Age"/><br>
   </div>
-</div>
+</section>
   
 <!--User Story 11 -->
-            
-   <div class="form-group">
-    <p>Which option best describes your current Position?</p>
-    <select id="dropdown" name="role" class="form-control" required>
-      <option disabled selected value>Select current role</option>
-      <option value="student">Student</option>
-      <option value="job">Full Time Job</option>
-      <option value="learner">Full Time Learner</option>
-      <option value="preferNo">Prefer not to say</option>
-      <option value="other">Other</option>
+  <section class="row">
+     <div class="label">
+      <span id="position">What is for current position as Web Developer development?</span>
+    </div>          
+    <div class="form-content">
+      <select id="dropdown" name="role" class="form-control" required>
+         <option disabled selected value>Select current role</option>
+         <option value="student">Student</option>
+         <option value="job">Full Time Job</option>
+         <option value="learner">Full Time Learner</option>
+         <option value="preferNo">Prefer not to say</option>
+         <option value="other">Other</option>
     </select>
-  </div>
-
-   <div class="form-group">
-    <p>Would you recommend Microverse to a friend?</p>
-     <input type="checkbox" name="Definitely" value="1">Definitely>
-     <br>
-      <input type="checkbox" name="Maybe" value="2">Maybe>
-     <br>
-      <input type="checkbox" name="Next Upcoming Bootcamp" value="3">Next Upcoming Bootcamp>
-     <br>
-      <input type="checkbox" name="Future Bootcamp" value="4">Future Bootcamp>
-     <br>
    </div>
+  </section>
 
-     <div class="form-group">
-         <button type="submit" id="submit" class="submit-button">
-            Submit
-         </button>
-     </div>
-</form>
-</div>
+  <section class="row">
+        <div class="label">
+             <p>Would you recommend Microverse to a friend?</p>
+        </div>
+        <div class="form-content">
+              <input type="checkbox" name="Definitely" value="1"><span>Definitely</span>
+            <br>
+               <input type="checkbox" name="Maybe" value="2"><span>Maybe</span>
+            <br>
+               <input type="checkbox" name="Next Upcoming Bootcamp" value="3"><span> Next Upcoming Bootcamp</span>
+             
+            <br>
+                <input type="checkbox" name="Future Bootcamp" value="4"><span>Future Bootcamp</span>
+            <br>
+         </div>
+     </section>
+
+
+        <section class="sub-btn">
+             <button type="submit" id="submit" class="submit-button">
+                  Submit
+             </button>
+         </section>
+     </form>
+    </main>
     <script  src="js/index.js"></script>
   </body>
 </html>
