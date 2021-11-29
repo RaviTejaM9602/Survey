@@ -1,13 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./style.css">
-  <title>Survey Project</title>
-</head>
-<body>
-  <h1>Developing a survey Form</h1>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <title>Microverse Online Admission Form</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <!--User Story 1-->
+    <h1 id="title">Microverse Survey Form</h1>
+
+    <!--User Story 2-->
+  <p id="description">
+    Fill Your Details to Join in the Microverse Upcoming Bootcamp
+  </p>
+
+   <!--User Story 3 & 4-->
+<form id="survey-form">
+
+    <label id="name-label" for="name">Name : </label>
+    <input type="text" name="name" id="name" placeholder="Microverse Bootcamper" required><br>           
+             
+     
+
+    <!--User Story 5 -->
+
+    <label for="email" id="email-label">Email</label>
+    <input type="email" name="email" id="email" placeholder="Enter your Email" required  /> <br>
+      
+   
+    <!--User Story 5 , 6, 7 ,8, 9 & 10-->
+
+    <label for="number" id="number-label">Age<span class="clue">(optional)</span></label>
+    <input id="number" type="number" min="20" max="99" placeholder="Age"/><br>  
+
+
+    <!--User Story 11 -->
+            
+   <div class="form-group">
+    <p>Which option best describes your current Position?</p>
+    <select id="dropdown" name="role" class="form-control" required>
+      <option disabled selected value>Select current role</option>
+      <option value="student">Student</option>
+      <option value="job">Full Time Job</option>
+      <option value="learner">Full Time Learner</option>
+      <option value="preferNo">Prefer not to say</option>
+      <option value="other">Other</option>
+    </select>
+  </div>
+
+<div class="form-group">
+    <p>Would you recommend Microverse to a friend?</p>
+
+<input type="checkbox" name="Definitely" value="1">Definitely</input>
+<br>
+ <input type="checkbox" name="Maybe" value="2">Maybe</input>
+<br>
+ <input type="checkbox" name="Next Upcoming Bootcamp" value="3">Next Upcoming Bootcamp</input>
+<br>
+ <input type="checkbox" name="Future Bootcamp" value="4">Future Bootcamp</input>
+<br>
+ </div>
+
+  <div class="form-group">
+    <button type="submit" id="submit" class="submit-button">
+      Submit
+    </button>
+  </div>
+</form>
+    <script  src="js/index.js"></script>
+  </body>
 </html>
