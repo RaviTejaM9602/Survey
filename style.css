@@ -1,3 +1,82 @@
-h1 {
+@import url('https://fonts.googleapis.com/css?family=Acme|Merriweather+Sans');
+
+body {
+  background-color: #bc92cc;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+#title {
+  text-align: center;
+  font-size: 250%;
+  font-family: 'Acme', sans-serif;
+}
+
+input {
+  padding: 6px;
+  border-radius: 3px;
+  background-color: transparent;
+}
+
+.main-section {
+  background-color: #e7dfdd;
+  margin: 0 10%;
+  padding: 15px;
+  text-align: center;
+}
+
+#description {
+  font-size: 150%;
+  text-align: center;
+}
+
+.row {
+  margin: 15px 0 0 0;
+  font-size: 150%;
+}
+
+.label {
+  display: inline-block;
+  width: 40%;
+  text-align: right;
+  vertical-align: top;
+  padding-right: 15px;
+}
+
+.best {
+  display: inline-block;
+  width: 40%;
+  text-align: right;
+  vertical-align: top;
+  padding-right: 15px;
+}
+
+.form-content {
+  display: inline-block;
+  width: 48%;
+  text-align: left;
+}
+
+.label span {
+  color: rgb(164, 139, 139);
+  padding-right: 5px;
+}
+
+.form-control {
+  margin: 11px 0 0;
+}
+
+textarea {
+  font-size: 70%;
+}
+
+#position {
   color: black;
+}
+
+.sub-btn {
+  margin: 15px;
+}
+
+#submit {
+  font-size: 100%;
 }

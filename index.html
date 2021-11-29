@@ -1,13 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./style.css">
-  <title>Survey Project</title>
-</head>
-<body>
-  <h1>Developing a survey Form</h1>
-</body>
+  <head>
+     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" 
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" 
+    crossorigin="anonymous">  
+    <link rel="stylesheet" href="style.css">
+    <title>HTML Elements Reference</title>
+  </head>
+    <body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <!--User Story 1-->
+    <header>
+           <h1 id="title">Microverse Survey Form</h1>
+    <!--User Story 2-->
+          <p id="description">
+            Fill Your Details to Join in the Microverse Upcoming Bootcamp
+          </p>
+     </header>
+   <!--User Story 3 & 4-->
+<main class="main-section">
+       <form id="survey-form">
+
+  <section class="row">
+    <div class="label">
+      <label id="name-label" for="name">Name: </label>
+    </div>
+  <div class="form-content">
+      <input type="text" name="name" id="name" placeholder="Microverse Bootcamper" required><br> 
+    </div>
+  </section>
+    
+  <!--User Story 5 -->
+
+  <section class="row">
+    <div class="label">
+      <label for="email" id="email-label">Email: </label>
+    </div>
+    <div class="form-content">
+      <input type="email" name="email" id="email" placeholder="Enter your Email" required  /> <br>
+    </div>
+  </section>
+
+  <!--User Story 5 , 6, 7 ,8, 9 & 10-->
+<section class="row">
+  <div class="label">
+    <label for="number" id="number-label">Age<span class="clue">(optional): </span></label>
+  </div>
+  <div class="form-content">
+    <input id="number" type="number" min="20" max="99" placeholder="Age"/><br>
+  </div>
+</section>
+  
+<!--User Story 11 -->
+  <section class="row">
+     <div class="label">
+      <span id="position">What is for current position as Web Developer development?</span>
+    </div>          
+    <div class="form-content">
+      <select id="dropdown" name="role" class="form-control" required>
+         <option disabled selected value>Select current role</option>
+         <option value="student">Student</option>
+         <option value="job">Full Time Job</option>
+         <option value="learner">Full Time Learner</option>
+         <option value="preferNo">Prefer not to say</option>
+         <option value="other">Other</option>
+    </select>
+   </div>
+  </section>
+
+  <section class="row">
+        <div class="label">
+             <p>Would you recommend Microverse to a friend?</p>
+        </div>
+        <div class="form-content">
+              <input type="checkbox" name="Definitely" value="1"><span>Definitely</span>
+            <br>
+               <input type="checkbox" name="Maybe" value="2"><span>Maybe</span>
+            <br>
+               <input type="checkbox" name="Next Upcoming Bootcamp" value="3"><span> Next Upcoming Bootcamp</span>
+             
+            <br>
+                <input type="checkbox" name="Future Bootcamp" value="4"><span>Future Bootcamp</span>
+            <br>
+         </div>
+     </section>
+
+
+        <section class="sub-btn">
+             <button type="submit" id="submit" class="submit-button">
+                  Submit
+             </button>
+         </section>
+     </form>
+    </main>
+    <script  src="js/index.js"></script>
+  </body>
 </html>
